@@ -22,6 +22,9 @@
  </script>
 ````
 
+#效果预览
+[Demo](http://keepsilent.github.io/drop/)
+
 #参考资料
 * B站APP拖动刷新
 * [移动端下拉刷新、上拉加载更多插件](https://github.com/ximan/dropload)
