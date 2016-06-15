@@ -23,7 +23,15 @@
 ````
 
 #效果预览
-[Demo](http://keepsilent.github.io/drop/)
+[Demo](http://keepsilent.github.io/drop/index.html)
+
+#环境下运行
+* chrome手机模式:运行流畅,不卡顿
+* Iphone 5s:运行流畅,不卡顿
+* 红米: 运行不流畅，卡顿(安桌机真心不行)
+
+#Bug
+由于移动端的都有下拖刷新功能，两者达到一定位置时,发现拉动抖动,估计是硬伤
 
 #参考资料
 * B站APP拖动刷新
