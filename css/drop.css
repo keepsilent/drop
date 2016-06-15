@@ -1,0 +1,67 @@
+.drop-tips { width: 100%; height: auto; text-align: center; font-size: 0.875em; color: #999; overflow: hidden; }
+.drop-tips div { padding: 0 0; }
+.drop-tips div p:first-child {  font-size: 3em; color: #DDD; line-height: 1.3; }
+.drop-tips div p:last-child i { display: inline-block; margin-right: 3px; }
+
+.drop-tips div.load p:first-child { color: #999;}
+.drop-tips div.load p:last-child i {
+    -moz-animation: spin 0.75s infinite linear;
+    -o-animation: spin 0.75s infinite linear;
+    -webkit-animation: spin 0.75s infinite linear;
+    animation: spin 0.75s infinite linear;
+}
+
+.drop-tips div i.trun {
+    -moz-animation: trun 0.3s 1 linear;
+    -o-animation: trun 0.3s 1 linear;
+    -webkit-animation: trun 0.3s 1 linear;
+    animation: trun 0.3s 1 linear;
+}
+
+@-moz-keyframes trun {
+    0% { -moz-transform:rotate(-180deg); }
+    100% { -moz-transform:rotate(0deg); }
+}
+@-webkit-keyframes trun {
+    0% { -webkit-transform:rotate(-180deg); }
+    100% { -webkit-transform:rotate(0deg); }
+}
+@-o-keyframes trun {
+    0% { -o-transform:rotate(-180deg); }
+    100% { -o-transform:rotate(0deg); }
+}
+@-ms-keyframes trun {
+    0% { -ms-transform:rotate(-180deg); }
+    100% { -ms-transform:rotate(0deg); }
+}
+
+@keyframes trun {
+    0% { transform:rotate(-180deg); }
+    100% { transform:rotate(0deg); }
+}
+
+
+html,body { background: #F5F5F5; }
+
+.header { position: fixed; top: 0; left:0; width: 100%; height: 50px; line-height: 50px; background: #FFF; border-bottom: solid 1px #d2d2d2;  }
+.header h1 { font-size: 1.2em; font-weight: normal; text-align: center; }
+
+
+.wrap { width: 100%; height: auto; margin-top: 60px; padding-bottom: 60px; }
+.wrap div.rank { width: 95%; margin: 0 auto; }
+.wrap div.rank  ul { padding: 0 2.5%; background: #FFF; }
+.wrap div.rank  ul li { padding: 8px 2.5% 0; border-bottom: solid 1px #d2d2d2; }
+.wrap div.rank  ul li:last-child { border-width: 0; }
+.wrap div.rank  table { width: 100%; }
+.wrap div.rank  table tr td:first-child { width: 50px; padding-right: 10px; }
+.wrap div.rank  dl dt { color: #333; font-size: 1em; }
+.wrap div.rank  dl dt span {float: right; color: #CCC; font-size: 0.75em; }
+.wrap div.rank  dl dt span i { margin-right: 3px; }
+.wrap div.rank  dl dd { color: #999; font-size: 0.875em; }
+
+.footer { position: fixed; bottom: 0; left:0; width: 100%; height: 50px;  background: #FFF; border-top: solid 1px #d2d2d2;  }
+.footer ul {  width: 100%; text-align: center; color: #999; }
+.footer ul li { float: left; width: 50%; height: 20px; margin: 15px 0; }
+.footer ul li.current { color: #666; }
+.footer ul li:first-child { margin-right: -1px; }
+.footer ul li:last-child { border: solid 1px #d2d2d2; border-width: 0; border-left-width: 1px;}

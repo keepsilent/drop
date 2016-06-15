@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Drop demo</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
+    <link rel="stylesheet" href="css/base.css?v=2016060701" />
+    <link rel="stylesheet" href="css/drop.css?v=2016060701" />
+    <link rel="stylesheet" href="css/slide.css?v=2016060701" />
+    <link rel="stylesheet" href="css/font-awesome.min.css?v=2016060701" />
+</head>
+<body>
+    <div class="header">
+        <h1>萌战</h1>
+    </div>
+    </div>
+    <div id="wrap" class="wrap">
+        <div id="main" class="main">
+            <div class="slide" id="slide">
+                <div class="slide-inner">
+                    <ul id="slide-box">
+                        <li><img src="images/silde/1.jpg" width="100%" alt="1" /></li>
+                        <li><img src="images/silde/2.jpg" width="100%" alt="2" /></li>
+                        <li><img src="images/silde/3.jpg" width="100%" alt="3" /></li>
+                        <li><img src="images/silde/4.jpg" width="100%" alt="4" /></li>
+                        <li><img src="images/silde/5.jpg" width="100%" alt="5" /></li>
+                    </ul>
+                    <div class="slide-nav"></div>
+                </div>
+            </div>
+            <div class="rank">
+                <ul>
+                    <li>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <td><img src="images/01.jpg" width="50" height="50" alt="苍星石"/></td>
+                                <td>
+                                    <dl>
+                                        <dt>苍星石<span><i class="icon-heart-empty"></i>200+</span></dt>
+                                        <dd>蔷薇少女</dd>
+                                    </dl>
+                                </td>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <td><img src="images/02.jpg" width="50" height="50" alt="张飞"/></td>
+                            <td>
+                                <dl>
+                                    <dt>小花<span><i class="icon-heart-empty"></i>190+</span></dt>
+                                    <dd>快坏掉的八音盒</dd>
+                                </dl>
+                            </td>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <td><img src="images/04.jpg" width="50" height="50" alt="两仪式"/></td>
+                            <td>
+                                <dl>
+                                    <dt>两仪式<span><i class="icon-heart-empty"></i>180+</span></dt>
+                                    <dd>空之境界</dd>
+                                </dl>
+                            </td>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <td><img src="images/05.jpg" width="50" height="50" alt="浅上藤乃"/></td>
+                            <td>
+                                <dl>
+                                    <dt>浅上藤乃<span><i class="icon-heart-empty"></i>170+</span></dt>
+                                    <dd>空之境界 痛觉的残留</dd>
+                                </dl>
+                            </td>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <td><img src="images/06.jpg" width="50" height="50" alt="立华奏"/></td>
+                            <td>
+                                <dl>
+                                    <dt>立华奏<span><i class="icon-heart-empty"></i>160+</span></dt>
+                                    <dd>Angel Beats!</dd>
+                                </dl>
+                            </td>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <td><img src="images/07.jpg" width="50" height="50" alt="张飞"/></td>
+                            <td>
+                                <dl>
+                                    <dt>远板凛<span><i class="icon-heart-empty"></i>150+</span></dt>
+                                    <dd>Fate/stay night</dd>
+                                </dl>
+                            </td>
+                            </tbody>
+                        </table>
+                    </li>
+
+                    <li>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                            <td><img src="images/08.jpg" width="50" height="50" alt="c.c"/></td>
+                            <td>
+                                <dl>
+                                    <dt>c.c<span><i class="icon-heart-empty"></i>140+</span></dt>
+                                    <dd>反叛的鲁路修</dd>
+                                </dl>
+                            </td>
+                            </tbody>
+                        </table>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul>
+            <li class="current">排行榜</li>
+            <li>流行榜</li>
+        </ul>
+    </div>
+</body>
+</html>
+<script src="js/zepto.min.js?v=2016060701"></script>
+<script src="js/drop.js?v=2016060701"></script>
+<script src="js/slide.js?v=2016060701"></script>
+<script type="text/javascript">
+    $('#main').drop({
+        action:function(tocher) {
+            tocher.resetload();
+        }
+    })
+
+    $.fn.slide({id:'slide'});
+</script>
