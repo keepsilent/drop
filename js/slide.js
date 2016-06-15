@@ -1,8 +1,14 @@
+/**
+ * 触屏滚动幻灯
+ *
+ * @author keepsilent
+ * @version 1.0.1
+ */
 ;(function($){
     $.fn.slide = function(options){
         var defaults = {
             id: 'slider', //容器名,例如:id="silder"
-            nav: 'slide-nav',
+            nav: 'slide-nav',//导航菜单
             width: $(window).width(), //容器的宽度
             num: 0, //幻灯片的数量
             speed: 3000,
@@ -52,7 +58,6 @@
                 var duration = +new Date - operate.startPos.time; // 滑动的持续时间
 
                 if(operate.isScrolling === 0) {
-                    //operate.direction = 'right';
                     if (Number(duration) > 10) {
                         if(operate.endPos.x > 10){
                             if(operate.index >= 1) {
